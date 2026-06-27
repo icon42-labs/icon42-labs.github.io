@@ -1,88 +1,102 @@
 ---
-layout: home
-title: icon42-labs
+layout: default
+title: Home
 ---
 
-# icon42-labs
+<header class="nav">
+  <div class="brand">
+    <div class="logo-mark">N</div>
+    <div>
+      <strong>NexusLab</strong>
+      <span>A structured learning path for embedded systems</span>
+    </div>
+  </div>
+  <nav>
+    <a href="#path">Learning Path</a>
+    <a href="#modules">Modules</a>
+    <a href="#resources">Resources</a>
+  </nav>
+  <a class="button small" href="#starter">Get started</a>
+</header>
 
-Building modern engineering education.
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">NexusLab</p>
+      <h1>Master Embedded Systems.<br><span>Step by Step.</span></h1>
+      <p class="lead">
+        NexusLab guides learners from their first embedded application
+        to professional real-time software development.
+      </p>
+      <div class="actions">
+        <a class="button" href="#starter">Start learning</a>
+        <a class="button secondary" href="#modules">Browse modules</a>
+      </div>
+    </div>
 
----
+    <div class="hero-logo">
+      <div class="circuit-n">N</div>
+    </div>
+  </section>
 
-## Engineering first.
+  <section id="modules" class="modules">
+    <p class="eyebrow center">The NexusLab learning path</p>
+    <h2>Three modules. One goal: engineering competence.</h2>
 
-icon42-labs develops open educational resources for embedded systems, robotics and real-time software.
+    <div class="cards">
+      <article id="starter" class="card blue">
+        <span class="level">01</span>
+        <h3>Starter</h3>
+        <p class="tagline">Learn the tools.</p>
+        <p>Set up the toolchain, build, flash and debug your first embedded application.</p>
+        <ul>
+          <li>IDE & toolchain</li>
+          <li>Build and flash</li>
+          <li>Debugging</li>
+          <li>LEDs and buttons</li>
+        </ul>
+      </article>
 
-Our goal is simple:
+      <article class="card teal">
+        <span class="level">02</span>
+        <h3>Foundations</h3>
+        <p class="tagline">Learn the engineering.</p>
+        <p>Understand embedded software through GPIO, timers, interrupts and state machines.</p>
+        <ul>
+          <li>GPIO</li>
+          <li>Timers</li>
+          <li>Interrupts</li>
+          <li>FSM</li>
+        </ul>
+      </article>
 
-> Teach engineering the way it is practiced in industry.
+      <article class="card purple">
+        <span class="level">03</span>
+        <h3>Real-Time Systems</h3>
+        <p class="tagline">Learn the architecture.</p>
+        <p>Use FreeRTOS to design responsive multitasking embedded applications.</p>
+        <ul>
+          <li>Tasks</li>
+          <li>Queues</li>
+          <li>Semaphores</li>
+          <li>Scheduling</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+</main>
 
-No magic libraries. No copy & paste. No toy projects.
-
-Instead:
-
-- Clean architecture
-- Modern C/C++
-- Git & CI
-- State machines
-- Real-time systems
-- Reproducible projects
-- Professional documentation
-
----
-
-# NexusLab
-
-NexusLab is our open learning platform for embedded systems.
-
-Whether you are a student, educator or maker, NexusLab provides a structured learning path from the first GPIO application to complex real-time systems.
-
-### Learning Path
-
-1. Starter
-   - Install the toolchain
-   - Blink an LED
-   - Read a button
-   - First embedded application
-
-2. Foundations
-   - GPIO
-   - Timers
-   - Interrupts
-   - State Machines
-
-3. Embedded Systems
-   - Drivers
-   - Peripheral interfaces
-   - Software architecture
-
-4. Real-Time Systems
-   - FreeRTOS
-   - Scheduling
-   - Queues
-   - Semaphores
-   - Event Groups
-
-5. Robotics
-   - Sensors
-   - Motion Control
-   - Autonomous Mobile Robots
-   - Micromouse
-
----
-
-# Open Source
-
-All example projects, documentation and hardware designs are developed openly on GitHub.
-
----
-
-# Get Started
-
-➡ NexusLab Starter
-
-Begin with an inexpensive RP2040 development board and build your first embedded application in just a few minutes.
-
----
-
-© icon42-labs
+<footer id="resources">
+  <div>
+    <strong>Structured Learning</strong>
+    <p>A clear path from beginner to real-time competence.</p>
+  </div>
+  <div>
+    <strong>Real Hardware</strong>
+    <p>Learn with practical embedded systems projects.</p>
+  </div>
+  <div>
+    <strong>Engineering First</strong>
+    <p>Technologies are examples, not the objective.</p>
+  </div>
+</footer>
