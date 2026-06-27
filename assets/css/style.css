@@ -1,0 +1,286 @@
+:root {
+  --navy: #071a3d;
+  --blue: #0b57d0;
+  --teal: #12b8a6;
+  --purple: #6b3fd6;
+  --text: #071a3d;
+  --muted: #5d6b82;
+  --line: #dbe3ef;
+  --bg: #f7faff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: white;
+}
+
+.nav {
+  height: 86px;
+  padding: 0 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.logo-mark {
+  width: 42px;
+  height: 42px;
+  border: 3px solid var(--blue);
+  color: var(--blue);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  border-radius: 10px;
+}
+
+.brand span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+nav {
+  display: flex;
+  gap: 32px;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 8px;
+  background: var(--blue);
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(11, 87, 208, 0.18);
+}
+
+.button.small {
+  padding: 11px 18px;
+  font-size: 13px;
+}
+
+.button.secondary {
+  background: white;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  box-shadow: none;
+}
+
+.hero {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 96px 32px 84px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.eyebrow {
+  color: var(--teal);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  font-size: clamp(44px, 6vw, 76px);
+  line-height: 0.98;
+  margin: 0;
+  letter-spacing: -0.05em;
+}
+
+h1 span {
+  color: var(--teal);
+}
+
+.lead {
+  max-width: 600px;
+  font-size: 21px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.hero-logo {
+  min-height: 360px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle, #dbe3ef 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.circuit-n {
+  font-size: 240px;
+  font-weight: 900;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--blue), var(--teal));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.modules {
+  background: var(--bg);
+  padding: 72px 32px 78px;
+}
+
+.modules h2 {
+  text-align: center;
+  font-size: 34px;
+  margin: 8px 0 42px;
+}
+
+.cards {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.card {
+  position: relative;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 34px;
+  box-shadow: 0 18px 44px rgba(7, 26, 61, 0.08);
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 6px;
+  background: var(--blue);
+}
+
+.card.teal::before {
+  background: var(--teal);
+}
+
+.card.purple::before {
+  background: var(--purple);
+}
+
+.level {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 14px 18px;
+  border-bottom-left-radius: 18px;
+  background: var(--blue);
+  color: white;
+  font-weight: 900;
+}
+
+.card.teal .level {
+  background: var(--teal);
+}
+
+.card.purple .level {
+  background: var(--purple);
+}
+
+.card h3 {
+  font-size: 31px;
+  text-transform: uppercase;
+  margin: 32px 0 6px;
+}
+
+.tagline {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.card p {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.card ul {
+  padding-left: 20px;
+  line-height: 1.9;
+  font-weight: 650;
+}
+
+footer {
+  background: #03142f;
+  color: white;
+  padding: 40px 64px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+footer p {
+  color: #b9c7db;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    height: auto;
+    padding: 22px;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero,
+  .cards,
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 56px;
+  }
+
+  .hero-logo {
+    min-height: 220px;
+  }
+
+  .circuit-n {
+    font-size: 150px;
+  }
+}
